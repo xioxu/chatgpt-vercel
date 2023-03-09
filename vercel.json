@@ -1,8 +1,6 @@
 {
-    "builds": [
-      {
-        "src": "app.js",
-        "use": "@vercel/node"
-      }
+    "version": 2,
+    "routes": [
+      {"src": "/(.*)","dest": "https://api.openai.com"}
     ]
-  }
+}
